@@ -1,0 +1,83 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body style */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Main container */
+  .container {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 700px;
+  }
+  
+  /* Title */
+  h1 {
+    margin-bottom: 1rem;
+    color: #00796b;
+  }
+  
+  /* Mood Buttons */
+  .mood-options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+  }
+  
+  .mood-btn {
+    font-size: 2rem;
+    background-color: #b2dfdb;
+    border: none;
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+  }
+  
+  .mood-btn:hover {
+    transform: scale(1.2);
+    background-color: #80cbc4;
+  }
+  
+  /* History Section */
+  h2 {
+    color: #00796b;
+    margin-bottom: 1rem;
+  }
+  
+  .history-list {
+    list-style: none;
+  }
+  
+  .history-item {
+    background-color: #f1f8e9;
+    margin-bottom: 0.5rem;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px);}
+    to { opacity: 1; transform: translateY(0);}
+  }
+  
